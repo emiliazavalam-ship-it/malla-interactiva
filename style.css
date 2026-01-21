@@ -1,6 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #fff5f7;
+}
+
+h1 {
+  color: #8b3a62;
 }
 
 .malla {
@@ -13,7 +18,15 @@ body {
 
 .ramo {
   padding: 15px;
-  background-color: #d9ead3;
+  background-color: #fde2e4;   /* rosado claro */
   border-radius: 12px;
   font-weight: bold;
+  color: #6b2f3a;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ramo.aprobado {
+  background-color: #f2849e;   /* rosado fuerte */
+  color: white;
 }
