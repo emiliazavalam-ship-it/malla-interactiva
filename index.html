@@ -3,18 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <title>Malla Medicina Veterinaria</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #c2185b;
+    }
+
+    h2 {
+      color: #ad1457;
+      margin-top: 40px;
+    }
+
+    h3 {
+      color: #d81b60;
+      margin-top: 20px;
+    }
+
+    .semestre {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .ramo {
+      background-color: #f8bbd0;
+      border: 2px solid #ec407a;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .ramo:hover {
+      background-color: #f48fb1;
+    }
+
+    .ramo.aprobado {
+      background-color: #ce93d8;
+      text-decoration: line-through;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Malla Medicina Veterinaria</h1>
+<h1>🌸 Malla Medicina Veterinaria 🌸</h1>
 
-<div class="malla">
-  <div class="ramo" onclick="marcar(this)">Bases Moleculares</div>
-  <div class="ramo" onclick="marcar(this)">Diversidad Animal</div>
-  <div class="ramo" onclick="marcar(this)">Métodos de Cuantificación</div>
+<h2>Primer Año</h2>
+
+<h3>Semestre I</h3>
+<div class="semestre">
+  <div class="ramo">Bases Moleculares</div>
+  <div class="ramo">Diversidad Animal</div>
+  <div class="ramo">Métodos de Cuantificación</div>
+  <div class="ramo">Orientación a la Medicina Veterinaria</div>
+  <div class="ramo">Inglés Beginner</div>
+  <div class="ramo">Introducción al Manejo de la Información</div>
+  <div class="ramo">Seminario Espacio A</div>
 </div>
 
-<script src="script.js"></script>
+<h3>Semestre II</h3>
+<div class="semestre">
+  <div class="ramo">Bases Celulares</div>
+  <div class="ramo">Bases Moleculares y Celulares</div>
+  <div class="ramo">Desarrollo y Estructura Microscópica del Organismo Animal</div>
+  <div class="ramo">Estructura Macroscópica del Organismo Animal</div>
+  <div class="ramo">Ecología</div>
+  <div class="ramo">Bioestadística</div>
+  <div class="ramo">Inglés Preintermedio</div>
+  <div class="ramo">Práctica General Básica</div>
+</div>
+
+<h2>Segundo Año</h2>
+
+<h3>Semestre III</h3>
+<div class="semestre">
+  <div class="ramo">Fisiología I</div>
+  <div class="ramo">Conducta Animal</div>
+  <div class="ramo">Epidemiología General</div>
+  <div class="ramo">Bases Económicas y Administrativas</div>
+  <div class="ramo">Práctica Clínica Básica</div>
+  <div class="ramo">Práctica de Campo Básica</div>
+  <div class="ramo">Electivo Formación General I</div>
+  <div class="ramo">Electivo Especializado I</div>
+</div>
+
+<h3>Semestre IV</h3>
+<div class="semestre">
+  <div class="ramo">Ecología de Poblaciones</div>
+  <div class="ramo">Bases Inmunológicas</div>
+  <div class="ramo">Fisiología II</div>
+  <div class="ramo">Farmacología General</div>
+  <div class="ramo">Agentes Biológicos Patógenos</div>
+  <div class="ramo">Introducción a la Producción Animal</div>
+  <div class="ramo">Módulo Integrador Ciclo Básico</div>
+  <div class="ramo">Electivo Libre I</div>
+</div>
+
+<h2>Tercer Año</h2>
+
+<h3>Semestre V</h3>
+<div class="semestre">
+  <div class="ramo">Manipulación de Información Genética</div>
+  <div class="ramo">Enfermedades Infecciosas y Parasitarias</div>
+  <div class="ramo">Patología I</div>
+  <div class="ramo">Nutrición</div>
+  <div class="ramo">Bases de Tecnologías Diagnósticas</div>
+  <div class="ramo">Electivo Especializado II</div>
+</div>
+
+<h3>Semestre VI</h3>
+<div class="semestre">
+  <div class="ramo">Anatomía Topográfica</div>
+  <div class="ramo">Patología II</div>
+  <div class="ramo">Genética Básica</div>
+  <div class="ramo">Alimentación</div>
+  <div class="ramo">Métodos de Exploración Clínica</div>
+  <div class="ramo">Electivo Formación General II</div>
+  <div class="ramo">Electivo Libre II</div>
+</div>
+
+<h2>Cuarto Año</h2>
+
+<h3>Semestre VII</h3>
+<div class="semestre">
+  <div class="ramo">Conducta Aplicada</div>
+  <div class="ramo">Patología III</div>
+  <div class="ramo">Patología Diagnóstica</div>
+  <div class="ramo">Reproducción</div>
+  <div class="ramo">Biotecnología Reproductiva</div>
+  <div class="ramo">Medicina Interna Nivel I</div>
+  <div class="ramo">Salud Pública Veterinaria</div>
+</div>
+
+<h3>Semestre VIII</h3>
+<div class="semestre">
+  <div class="ramo">Planificación</div>
+  <div class="ramo">Gestión Ambiental</div>
+  <div class="ramo">Inocuidad de Alimentos</div>
+  <div class="ramo">Manejo Productivo</div>
+  <div class="ramo">Obstetricia y Ginecología</div>
+  <div class="ramo">Módulo Integrador Pre-Profesional</div>
+  <div class="ramo">Práctica Pre Profesional</div>
+</div>
+
+<h2>Quinto Año</h2>
+
+<h3>Semestre IX</h3>
+<div class="semestre">
+  <div class="ramo">Control y Aseguramiento de la Calidad de los Alimentos</div>
+  <div class="ramo">Impacto Ambiental</div>
+  <div class="ramo">Medicina Interna Nivel II</div>
+  <div class="ramo">Anestesiología y Cirugía I</div>
+  <div class="ramo">Anestesiología y Cirugía II</div>
+  <div class="ramo">Patología en Explotaciones Masivas</div>
+  <div class="ramo">Bases Legislativas</div>
+  <div class="ramo">Taller de Titulación</div>
+</div>
+
+<h3>Semestre X</h3>
+<div class="semestre">
+  <div class="ramo">Internado Medicina Veterinaria</div>
+  <div class="ramo">Internado Producción Animal</div>
+  <div class="ramo">Internado Medicina Preventiva</div>
+  <div class="ramo">Práctica Profesional</div>
+</div>
+
+<script>
+  const ramos = document.querySelectorAll('.ramo');
+
+  ramos.forEach(ramo => {
+    ramo.addEventListener('click', () => {
+      ramo.classList.toggle('aprobado');
+    });
+  });
+</script>
+
 </body>
 </html>
